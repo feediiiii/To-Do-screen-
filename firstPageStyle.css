@@ -1,0 +1,34 @@
+body{
+    background: rgb(39,33,138);
+    background: linear-gradient(90deg, rgba(39,33,138,1) 0%, rgba(107,107,177,1) 47%, rgba(215,96,68,1) 100%);
+}
+
+
+
+
+
+#oklok{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6em;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-weight: bolder;
+    
+
+}
+
+#message1{
+    background-color: black;
+    border-radius: 2em;
+    background-color: rgb(127, 127, 127);
+    padding-top: 0.3px;
+}
+
+
+#dayOrNight{
+    
+    font-size: 0.3em;
+    color : white;
+}
