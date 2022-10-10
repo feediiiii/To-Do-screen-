@@ -13,13 +13,17 @@
 <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
     
 
+
+
+
+<div id="theHolePage">
 <div id='toDoList'>
     <h1> To-Do list for Today :  </h1> <span id="dateOutput"></span>
     <ul>
     </ul>
     
     <div id="theSecondHalf">
-        <textarea id="toDoInput" cols="30" rows="3"></textarea>
+        <textarea id="toDoInput" cols="30" rows="3" onkeypress="return printOnPressing()"></textarea>
         <button id="addButton"> Add to the ToDo list </button>
     </div>
     
@@ -35,6 +39,15 @@
         <br>
         <div id="message1"><h6 id="dayOrNight"> Good morning ... </h6></div>
     </div></center>
+</div>
+
+
+
+<div id="hiUser">
+    <center><h1 id="hiUserMessage"></h1></center>
+    <center><a href="#" onclick="return disapear()"> I continue </a></center>
+</div>
+
 
 
 <script src="firstPageJs.js"></script>

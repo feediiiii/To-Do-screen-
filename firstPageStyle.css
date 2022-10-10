@@ -5,6 +5,45 @@ body{
     background: linear-gradient(90deg, rgba(39,33,138,1) 0%, rgba(107,107,177,1) 47%, rgba(215,96,68,1) 100%);
 }
 
+
+#hiUser{
+   position : absolute;
+    background-color: black;
+   height: 235px;
+   width: 80%;
+   position: absolute;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 3em;
+    
+
+}
+
+#hiUser #hiUserMessage{
+    color:aliceblue;
+    position: absolute;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+a{
+    font-size: 30px;
+    text-decoration: none;
+    color: aquamarine;
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 20%;
+    
+}
+
+
+
+
+
+
 #dateOutput{
     font-weight: bolder;
     font-size: 25px;
