@@ -19,11 +19,11 @@ body{
 
 }
 
-#message1{
+#message1 .h6{
     background-color: black;
     border-radius: 2em;
     background-color: rgb(127, 127, 127);
-    padding-top: 0.3px;
+    
 }
 
 
