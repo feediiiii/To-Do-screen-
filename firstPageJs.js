@@ -8,6 +8,22 @@ function disapear(){
 }
 
 
+function typing(){
+    var theInput=$("#toDoInput").val();
+    $("ul").append("<li>"+theInput+"<input type='checkbox' id='checkBox'></li>")
+    $("#toDoInput").val("");
+}
+
+
+$("#toDoInput").change(typing);
+
+
+
+$("ul").on("click",$("ul li #checkBox"),function(){
+    $("ul li").toggleClass("makeItGreen");
+})
+
+
 
 
 function wariLwa9t(){
@@ -15,12 +31,16 @@ function wariLwa9t(){
     sweya3=lwa9t.getHours()
     d9aye9=lwa9t.getMinutes()
     second=lwa9t.getSeconds();
-
-$("#dateOutput").text(lwa9t.getDate()+"/"+lwa9t.getMonth()+"/"+lwa9t.getFullYear())
+months =lwa9t.getMonth()+1;
+$("#dateOutput").text(lwa9t.getDate()+"/"+months+"/"+lwa9t.getFullYear())
 
     $("#sweya3").text(sweya3);
     $("#d9aya9").text(d9aye9);
     $("#seconde").text(second);
+   
+    if (sweya3 >= 0 && sweya3 < 4){
+        $("#dayOrNight").text("you should go to sleep "+userName+" or I will call your mom")
+    }
 
     if ( sweya3 < 10 && sweya3 >= 4){
         $("#dayOrNight").text("Good Morning ")
@@ -41,10 +61,3 @@ $("#dateOutput").text(lwa9t.getDate()+"/"+lwa9t.getMonth()+"/"+lwa9t.getFullYear
 }
 
 setInterval(wariLwa9t,10)   // setInterval will refresh this function every 10 mili seconde :)
-
-function printOnPressing (){
-   var theCurrentVal =  $("#toDoInput").val();
-   $("ul").append("<li>"+ theCurrentVal +"</li>")
-
-}
-
